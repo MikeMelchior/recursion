@@ -26,8 +26,8 @@ const merge = (listA, listB) => {
 // merge([2], [1]) ...//...[1, 2]
 
 const mergeSort = (list) => {
-    start = 0;
-    finish = list.length;
+    let start = 0;
+    let finish = list.length;
     if (finish < 2) {
         return list;
     }
@@ -40,3 +40,5 @@ const mergeSort = (list) => {
 
 // mergeSort([3, 1, 2, 4, 7, 5, 6, 8]) ...//... [1, 2, 3, 4, 5, 6, 7, 8]
 // mergeSort([2, 6, 2, 75, 2, 4, 8, 3, 57, 2, 35]) ...//... [2, 2, 2, 2, 3, 4, 6, 8, 35, 57, 75]
+
+export {merge, mergeSort}
